@@ -21,15 +21,3 @@ Este repositório foi criado para armazenar, organizar e documentar todos os des
 > 📍 **Local:** SENAI CTAI - Florianópolis / SC  
 > 💡 **Objetivo:** Construir uma base sólida no ecossistema Web Front-end, do HTML básico ao JavaScript dinâmico.
 
----
-
-## 📁 Estrutura do Projeto
-
-```text
-.
-├── 01-fundamentos-html/    # Estruturação semântica e boas práticas
-├── 02-css-estilizacao/      # Estilos, seletores, cores e tipografia
-├── 03-layout-responsivo/    # Flexbox, CSS Grid e Media Queries
-├── 04-javascript-basico/    # Lógica, variáveis, funções e coleções
-├── 05-dom-eventos/         # Manipulação da árvore DOM e eventos de usuário
-└── README.md                # Documentação principal
