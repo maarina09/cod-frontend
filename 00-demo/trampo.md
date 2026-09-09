@@ -27,3 +27,50 @@ Desenvolvedor Web / Webmaster: Responsável pela manutenção contínua, correç
 Assistente / Analista de Suporte a Software: Posição inicial estratégica para entender a regra de negócio da empresa enquanto realiza pequenas manutenções no código.
 
 Como este é um campo amplo e com diferentes trilhas de carreira, você gostaria de sugestões sobre como orientá-los para processos seletivos (como montagem de portfólio no GitHub) ou prefere focar em quais linguagens/frameworks complementares priorizar no mercado atual? Essa resposta ajudará a preparar o próximo passo da sua turma!
+
+
+
+---
+
+# trampo com tecnologia mas sem programação
+E se eu gostar de tecnologia mas não gostar de programação, posso atuar com o quê?
+
+Gostar de tecnologia sem ter afinidade com código não é um obstáculo. O mercado de TI é gigante e depende fortemente de funções que focam em pessoas, processos, design, dados e negócios.
+
+Áreas de Atuação Sem Programação
+
+Product Management & Negócios
+
+Product Owner (PO) / Product Manager (PM): Define o que o produto deve fazer, prioriza tarefas e faz a ponte entre os clientes e os desenvolvedores.
+
+Analista de Requisitos / Negócios: Mapeia as necessidades das empresas e as traduz em especificações técnicas para a equipe de tecnologia.
+
+Design e Experiência do Usuário (UI/UX)
+
+UX Designer: Pesquisa o comportamento do usuário e desenha fluxos de navegação para tornar os sistemas fáceis e intuitivos.
+
+UI Designer: Cuida da parte visual de sites e aplicativos (layouts, cores, tipografia, protótipos no Figma).
+
+Gestão de Projetos e Agilidade
+
+Scrum Master / Agile Coach: Facilita a rotina da equipe de desenvolvimento, remove impedimentos e garante que o time siga metodologias ágeis.
+
+Gerente de Projetos: Organiza prazos, orçamentos, cronogramas e entregas de tecnologia.
+
+Dados e Inteligência de Negócio
+
+Analista de BI (Business Intelligence): Utiliza ferramentas no-code/low-code (como Power BI ou Tableau) para criar painéis interativos e analisar métricas de negócios.
+
+Garantia de Qualidade e Suporte
+
+QA Tester Manual: Testa sistemas como se fosse o usuário final para encontrar falhas, inconsistências e problemas de usabilidade antes de o produto ir para o ar.
+
+Implantação e Suporte Técnico: Treina clientes para usar o software e ajuda a resolver dúvidas operacionais do dia a dia.
+
+Vendas Técnicas e Sucesso do Cliente
+
+Customer Success (CS): Acompanha clientes após a compra de um software para garantir que eles estejam obtendo valor com a ferramenta.
+
+SDR / Vendedor Técnico (Tech Sales): Negocia e vende soluções tecnológicas para outras empresas, traduzindo aspectos técnicos em benefícios comerciais.
+
+Se você estiver pensando em orientar alunos ou transicionar de carreira, qual dessas áreas você gostaria de explorar mais para entender o perfil necessário? Saber isso me ajuda a detalhar melhor os próximos passos!
