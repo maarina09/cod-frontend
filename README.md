@@ -21,3 +21,5 @@ Este repositório foi criado para armazenar, organizar e documentar todos os des
 > 📍 **Local:** SENAI CTAI - Florianópolis / SC  
 > 💡 **Objetivo:** Construir uma base sólida no ecossistema Web Front-end, do HTML básico ao JavaScript dinâmico.
 
+
+
