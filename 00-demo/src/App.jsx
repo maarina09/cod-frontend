@@ -24,7 +24,20 @@ function App() {
         Setor Público: Órgãos governamentais e universidades por meio de estágios, contratos temporários ou concursos públicos para cargos técnicos.
       </p>
 
-      
+      <h2>Trampos com tecnologia mas sem programação</h2>
+      <p>
+        Gostar de tecnologia sem ter afinidade com código não é um obstáculo. O mercado de TI é gigante e depende fortemente de funções que focam em pessoas, processos, design, dados e negócios.
+      </p>
+
+      <ul>
+        <li>Product Management & Negócios</li>
+        <li>Design e Experiência do Usuário (UI/UX)</li>
+        <li>Gestão de Projetos e Agilidade</li>
+        <li>Dados e Inteligência de Negócio</li>
+        <li>Vendas Técnicas e Sucesso do Cliente</li>
+      </ul>
+
+
 
     </div>
   )
