@@ -1,15 +1,23 @@
 h1{
-  background-color: #222;
+  background-color: #5aa3b6;
   padding: 25px;
-  color: #eee;
+  color: #e5f6f8;
   text-align: center;
 }
 
 .cont-app{
-  background-color: #aaa;
+  background-color: #eafdfb;
   min-height: 100vh;
 }
 
 ul{
   padding: 40px;
+}
+
+h2{
+  color: #447480;
+}
+
+.profissao{
+  color: #417b8a;
 }
