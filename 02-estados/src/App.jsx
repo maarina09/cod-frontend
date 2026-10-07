@@ -147,9 +147,7 @@ function App() {
     }
 
     let subtotal = dias * diaria;
-    let descontoemocional = subtotal * 0.10;
-    let descontoconvenio = subtotal * 0.15;
-    let totaldescontos = descontoconvenio + descontoemocional;
+    let totaldescontos  = subtotal * 25/100
     let multaDanos = 150;
     let total = subtotal - totaldescontos + multaDanos;
     setSaida(total);
