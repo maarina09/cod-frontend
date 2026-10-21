@@ -13,11 +13,11 @@ function App() {
    <div className="app">
     <h1>Painel de orações</h1>
     <hr />
-   <button onClick={() => setCount(1)}>Oração 1</button>
-     <button onClick={() => setCount(2)}>Oração 2</button>
-      <button onClick={() => setCount(3)}>Oração 3</button>
-       <button onClick={() => setCount(4)}>Oração 4</button>
-        <button onClick={() => setCount(5)}>Oração 5</button>
+   <button onClick={() => setCount(1)}>Devcansado</button>
+     <button onClick={() => setCount(2)}>Font-end</button>
+      <button onClick={() => setCount(3)}>Dev Web</button>
+       <button onClick={() => setCount(4)}>Backend</button>
+        <button onClick={() => setCount(5)}>Aprendiz</button>
      
      {count == 1 && <Oraçãododevcansado/>}
      {count == 2 && <Oraçãodoaprendiz/>}
