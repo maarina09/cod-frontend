@@ -1,0 +1,245 @@
+/* =========================================================
+   PAINEL DE ORAÇÕES — "missal do dev"
+   Rosácea de vitral ao fundo, fitas de missal como menu e
+   a oração aberta como um santinho com moldura em arco.
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600;700&family=IM+Fell+English:ital@0;1&display=swap');
+
+:root {
+  --noite: #0d1020;   /* fundo: nave da igreja à noite */
+  --nave: #141935;    /* painel da oração */
+  --vela: #efe6d2;    /* texto: luz de vela */
+  --palida: #9d99ad;  /* texto de apoio */
+  --ouro: #c9a24b;    /* fios, losangos e capitular */
+
+  /* cores do vitral (rosácea e fitas) */
+  --rubi: #a3202e;
+  --safira: #234a9e;
+  --esmeralda: #1f7a5a;
+  --ametista: #6a3fa0;
+
+  --f-gotica: 'Grenze Gotisch', Georgia, serif;
+  --f-texto: 'IM Fell English', Georgia, 'Times New Roman', serif;
+
+  color-scheme: dark;
+  background-color: var(--noite);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--ouro);
+  color: #1a1205;
+}
+
+body {
+  display: block;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--noite);
+  color: var(--vela);
+  font-family: var(--f-texto);
+}
+
+#root {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Layout ---------- */
+.app {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 8vw, 5rem) 1.25rem 4rem;
+}
+
+/* ---------- Rosácea (o elemento de destaque da página) ---------- */
+.app::before {
+  content: '';
+  position: absolute;
+  top: -230px;
+  left: 50%;
+  z-index: -1;
+  width: min(640px, 100%);
+  aspect-ratio: 1;
+  translate: -50% 0;
+  border-radius: 50%;
+  opacity: 0.38;
+  background:
+    /* medalhão central */
+    radial-gradient(circle, var(--ouro) 0 20px, var(--noite) 20px 25px, transparent 25px),
+    /* chumbo: anéis e raios entre os vidros */
+    repeating-radial-gradient(circle, transparent 0 66px, var(--noite) 66px 70px),
+    repeating-conic-gradient(var(--noite) 0 1deg, transparent 1deg 22.5deg),
+    /* vidros coloridos */
+    conic-gradient(
+      var(--rubi) 0 45deg, var(--safira) 0 90deg,
+      var(--ouro) 0 135deg, var(--esmeralda) 0 180deg,
+      var(--rubi) 0 225deg, var(--safira) 0 270deg,
+      var(--ouro) 0 315deg, var(--ametista) 0 360deg
+    );
+  -webkit-mask-image: radial-gradient(circle closest-side, #000 55%, transparent 100%);
+  mask-image: radial-gradient(circle closest-side, #000 55%, transparent 100%);
+  pointer-events: none;
+}
+
+/* ---------- Título ---------- */
+.app h1 {
+  flex: 0 0 100%;
+  margin: 0;
+  font-family: var(--f-gotica);
+  font-size: clamp(2.6rem, 9vw, 4.6rem);
+  font-weight: 700;
+  line-height: 1.05;
+  text-align: center;
+  text-wrap: balance;
+  color: var(--vela);
+  text-shadow: 0 2px 20px rgba(13, 16, 32, 0.9);
+}
+
+/* divisor: fio de ouro com losango */
+.app hr {
+  position: relative;
+  flex: 0 0 100%;
+  height: 9px;
+  margin: 0.5rem 0 1.25rem;
+  border: 0;
+  overflow: visible;
+  background:
+    linear-gradient(90deg, transparent, var(--ouro)) left center / 44% 1px no-repeat,
+    linear-gradient(270deg, transparent, var(--ouro)) right center / 44% 1px no-repeat;
+}
+
+.app hr::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 9px;
+  height: 9px;
+  background: var(--ouro);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* ---------- Botões: fitas de missal ---------- */
+.app > button {
+  --fita: var(--rubi);
+  flex: 0 1 6.8rem;
+  align-self: flex-start;
+  padding: 1rem 0.9rem 2rem;
+  font-family: var(--f-texto);
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--vela);
+  background: var(--fita);
+  border: 0;
+  border-radius: 3px 3px 0 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 14px), 0 100%);
+  cursor: pointer;
+  transition: transform 0.25s ease, filter 0.2s ease;
+}
+
+.app > button:nth-of-type(1) { --fita: var(--rubi); }
+.app > button:nth-of-type(2) { --fita: var(--safira); }
+.app > button:nth-of-type(3) { --fita: var(--esmeralda); }
+.app > button:nth-of-type(4) { --fita: var(--ametista); }
+.app > button:nth-of-type(5) { --fita: var(--ouro); color: #1a1205; }
+
+.app > button:hover {
+  transform: translateY(0.35rem);
+  filter: brightness(1.15);
+}
+
+/* a fita da oração aberta fica "puxada" para baixo
+   (:focus funciona logo após o clique; .ativo é opcional, veja o JSX) */
+.app > button:focus,
+.app > button.ativo {
+  outline: none;
+  transform: translateY(0.6rem);
+  filter: brightness(1.25) saturate(1.1);
+}
+
+/* o clip-path corta o outline, então o foco do teclado usa sombra interna */
+.app > button:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--vela), inset 0 0 0 4px rgba(0, 0, 0, 0.35);
+}
+
+/* ---------- A oração aberta: santinho em arco ---------- */
+.app > div {
+  position: relative;
+  flex: 0 0 100%;
+  margin-top: 1.75rem;
+  padding: 5.25rem clamp(1.4rem, 6vw, 3.25rem) clamp(2rem, 5vw, 3rem);
+  text-align: left;
+  text-wrap: pretty;
+  font-size: clamp(1.2rem, 2.3vw, 1.4rem);
+  line-height: 1.8;
+  color: var(--vela);
+  background: var(--nave);
+  border: 1px solid var(--ouro);
+  border-radius: 50% 50% 12px 12px / 80px 80px 12px 12px;
+  outline: 1px solid rgba(201, 162, 75, 0.35);
+  outline-offset: 7px;
+  animation: abrir 0.45s ease-out backwards;
+}
+
+/* losango no topo do arco */
+.app > div::before {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  width: 9px;
+  height: 9px;
+  background: var(--ouro);
+  transform: translateX(-50%) rotate(45deg);
+}
+
+/* letra capitular dourada */
+.app > div::first-letter {
+  float: left;
+  margin: 0.04em 0.1em 0 0;
+  font-family: var(--f-gotica);
+  font-size: 3.4em;
+  font-weight: 700;
+  line-height: 0.8;
+  color: var(--ouro);
+}
+
+/* ---------- Nenhuma oração aberta ---------- */
+.app:not(:has(> div))::after {
+  content: 'Escolha uma oração para abrir.';
+  flex: 0 0 100%;
+  margin-top: 2.5rem;
+  text-align: center;
+  font-style: italic;
+  color: var(--palida);
+}
+
+/* ---------- Movimento: só em resposta ao clique ---------- */
+@keyframes abrir {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app > div { animation: none; }
+  .app > button { transition: none; }
+}
