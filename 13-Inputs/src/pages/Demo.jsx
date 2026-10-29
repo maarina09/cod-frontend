@@ -15,7 +15,7 @@ function Demo() {
 
   return (
     <div className='demo'>
-        <h1>Demo - Médias</h1>
+        <h2>Demo - Médias</h2>
 
         <label htmlFor="">Nota 1</label>
         <input type="text" 

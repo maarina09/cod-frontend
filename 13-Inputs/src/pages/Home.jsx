@@ -13,7 +13,7 @@ function Home() {
 
   return (
     <div className='home'>
-         <h1>Inputs Controlados</h1>
+         <h2>Inputs Controlados</h2>
 
         <label htmlFor="">Login</label>
 
